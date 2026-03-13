@@ -34,11 +34,10 @@ A high-performance web content discovery tool written in Dart. Inspired by [GoBu
 
 ## Why DartBuster
 
-GoBuster is great. DartBuster exists for three reasons:
+GoBuster is great. DartBuster exists for two main reasons:
 
-1. **Single AOT binary, any platform.** `dart compile exe` produces a self-contained native binary with no runtime dependency — deploy it on a pentest box, inside a Docker container, or on a Raspberry Pi without installing Go.
-2. **Dart as a first-class security tooling language.** The Dart ecosystem lacks serious offensive tooling. DartBuster is both a useful tool and a reference implementation for async-heavy CLI security tools in Dart.
-3. **Designed to be extended.** Every scan mode is a plugin. Adding a new one (S3 buckets, git objects, SOCKS proxy fuzzing, OTP brute-force) requires touching exactly one file after writing the module itself.
+1. **Dart as a first-class security tooling language.** The Dart ecosystem lacks serious offensive tooling. DartBuster is both a useful tool and a reference implementation for async-heavy CLI security tools in Dart.
+2. **Designed to be extended.** Every scan mode is a plugin. Adding a new one (S3 buckets, git objects, SOCKS proxy fuzzing, OTP brute-force) requires touching exactly one file after writing the module itself.
 
 **HTTP engine:** `dart:io`'s native `HttpClient` — not `package:dio`, not `package:http`. The native client gives you direct control over TLS callbacks, redirect policy, keep-alive pooling, and connection limits that wrappers abstract away.
 
@@ -47,6 +46,10 @@ GoBuster is great. DartBuster exists for three reasons:
 ---
 
 ## Installation
+
+### Installing prebuilt
+1. Go to the [releases](https://github.com/tobibamidele/dartbuster/releases) tab and download the latest binary.
+2. Run the installed binary and you're good to go.
 
 ### Prerequisites
 
@@ -490,7 +493,7 @@ dart format --set-exit-if-changed .
 
 ## Licence
 
-MIT — see [LICENSE](LICENSE).
+Apache-2.0 — see [LICENSE](LICENSE).
 
 ---
 
