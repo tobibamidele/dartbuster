@@ -55,7 +55,7 @@ GoBuster is great. DartBuster exists for three reasons:
 ### Run from source
 
 ```bash
-git clone https://github.com/yourusername/dartbuster
+git clone https://github.com/tobibamidele/dartbuster
 cd dartbuster
 dart pub get
 dart run bin/main.dart --help
